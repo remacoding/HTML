@@ -1,0 +1,47 @@
+<!-- HTML links are hyperlinks. You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand. -->
+
+<!-- The HTML <a> tag defines a hyperlink. It has the following syntax: -->
+<a href="https://tech.eu/">Tech News</a>
+
+<!-- The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window -->
+<a href="https://tech.eu/" target="_blank">Tech News</a>
+
+<!-- Absolute URL (a full web address) in the href attribute.
+A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part): -->
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3schools.com/">W3School</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<!-- To use an image as a link, just put the <img> tag inside the <a> tag: -->
+<a href="default.asp">
+  <img
+    src="https://images.unsplash.com/photo-1557434440-d4d48e6578b5?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D"
+    alt="Beach Vocation"
+    style="width: 42px; height: 42px"
+  />
+</a>
+
+<!-- Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): -->
+<a href="mailto:someone@example.com">Send email</a>
+
+<!-- To use an HTML button as a link, you have to add some JavaScript code.
+JavaScript allows you to specify what happens at certain events, such as a click of a button: -->
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+<!-- Alternatively you can create a button inside the <a> tag: -->
+<a href="google.com"><button>Google</button></a>
+
+<!-- The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
