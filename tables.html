@@ -1,0 +1,74 @@
+<!-- HTML tables allow web developers to arrange data into rows and columns.
+A table in HTML consists of table cells inside rows and columns.
+ -->
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HTML Table Examples</title>
+     <style>
+      table, th, td {
+        border:1px solid black;
+      }
+      </style>
+      <body>
+    </head>
+    <body>
+  <!-- Each table cell is defined by a <td> and a </td> tag.
+  td stands for table data.
+  Everything between <td> and </td> are the content of the table cell.
+  A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+   -->
+  <h1>TD elements define table cells</h1>
+  
+  <table width="100%">
+    <tr>
+      <td>Emil</td>
+      <td>Tobias</td>
+      <td>Linus</td>
+    </tr>
+  </table>
+  
+  <!-- Each table row starts with a <tr> and ends with a </tr> tag.
+  tr stands for table row. -->
+  <h1>TR elements define table rows</h1>
+  
+  <table width="100%">
+    <tr>
+      <td>Arsenal</td>
+      <td>Chelsea</td>
+      <td>Tottenham</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>17</td>
+      <td>13</td>
+    </tr>
+  </table>
+
+  <!-- Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+th stands for table header. -->
+<h1>TH elements define table headers</h1>
+  
+<table width="100%">
+  <tr>
+    <th>1st Position</th>
+    <th>2nd Position</th>
+    <th>3rd Position</th>
+  </tr>
+  <tr>
+    <td>Arsenal</td>
+    <td>Chelsea</td>
+    <td>Tottenham</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>17</td>
+    <td>13</td>
+  </tr>
+</table>
+</body>
+</html>
