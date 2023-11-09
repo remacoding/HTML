@@ -1,0 +1,89 @@
+<!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Basics</title>
+  </head>
+  <body>
+    <!-- The HTML <input> element is the most used form element.
+    An <input> element can be displayed in many ways, depending on the type attribute. -->
+
+    <!-- Displays a single-line text input field -->
+    <input type="text" />
+    <!-- Displays a radio button -->
+    <input type="radio" />
+    <!-- Displays a checkbox -->
+    <input type="checkbox" />
+    <!-- Displays a checkBox, one or more items can be selected -->
+    <input type="checkbox" />
+    <!-- Displays a submit button -->
+    <input type="submit" />
+    <!-- Displays an image as a button, the button submits the form -->
+    <input type="submit" />
+    <!-- displays a clickable button -->
+    <input type="button" />
+
+    <!-- Label Element
+    The <label> tag defines a label for many form elements.
+    The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+    The <label> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+    The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. 
+    -->
+    <form action="">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" placeholder="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" name="lname" id="lname" placeholder="Smith" />
+    </form>
+
+    <!-- Radio Buttons
+        The <input type="radio"> defines a radio button.
+        Radio buttons let a user select ONE of a limited number of choices.
+    -->
+    <form action="">
+      <p>Please select your gender:</p>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="html">Male</label><br />
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+    </form>
+
+    <!-- CheckBoxes
+        The <input type="checkbox"> defines a checkbox.
+        Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+    -->
+    <form action="">
+      <p>What brand is your car?</p>
+      <input type="checkbox" id="brand1" name="brand1" value="BMW" />
+      <label for="brand1"> I have a BMW</label><br />
+      <input type="checkbox" id="brand2" name="brand2" value="Audi" />
+      <label for="brand2">I have an Audi</label><br />
+      <input type="checkbox" id="brand3" name="brand3" value="Volvo" />
+      <label for="brand3">I have a Volvo</label>
+    </form>
+    
+    <!-- The Submit Button
+        The <input type="submit"> defines a button for submitting the form data to a form-handler.
+        The form-handler is typically a file on the server with a script for processing input data.
+        The form-handler is specified in the form's action attribute.
+    -->
+    <form action="/forms-example.php">
+        <h1>Submit Button Example</h1>
+        <hr>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Robert"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname" placeholder="Smith"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Extra note:
+        each input field must have a name attribute to be submitted.
+        If the name attribute is omitted, the value of the input field will not be sent at all.  -->
+
+  </body>
+</html>
