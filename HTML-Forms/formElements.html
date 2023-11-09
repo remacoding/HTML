@@ -2,13 +2,152 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements</title>
+  </head>
+  <body>
+    <!-- one of the most used form elements is the <input> element.
+    The <input> element can be displayed in several ways, depending on the type attribute. 
+    -->
+    <h2>Input element</h2>
+    <form action="" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" name="fname" id="fname" />
+    </form>
+
+    <hr />
+
+    <!-- the <select> element
+    The <select> element defines a drop-down list:
+    The <option> element defines an option that can be selected.
+    By default, the first item in the drop-down list is selected.
+    To define a pre-selected option, add the selected attribute to the option.
+    Use the size attribute to specify the number of visible values.
+    Use the multiple attribute to allow the user to select more than one value:
+     -->
+    <h2>Select element</h2>
+    <form action="">
+      <label for="phone">Choose a phone:</label>
+      <select name="phone" id="phone" size="3" multiple>
+        <option value="pixel">Google Pixel</option>
+        <option value="galaxy" selected>Samsung Galaxy</option>
+        <option value="iphone">Apple Iphone</option>
+        <option value="xiaomi">Xiaomi 13</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr />
+
+    <!-- the textare element
+    The <textarea> element defines a multi-line input field (a text area).
+    The rows attribute specifies the visible number of lines in a text area.
+    The cols attribute specifies the visible width of a text area.
+     -->
+    <h2>Textarea</h2>
+    <p>The textarea element defines a multi-line input field</p>
+    <form action="">
+      <textarea name="message" id="message" cols="30" rows="10">
+Write your message.</textarea
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr />
+
+    <!-- The <button> element defines a clickable button.
+        Always specify the type attribute for the button element.
+    -->
+    <h2>Button Element</h2>
+    <button type="button" onclick="alert('Congratulations you made it!')">
+      View Message!
+    </button>
+
+    <hr />
+
+    <!-- The <fieldset> and <legend> Elements 
+        The <fieldset> element is used to group related data in a form.
+        The <legend> element defines a caption for the <fieldset> element.
+    -->
+    <h2>Grouping Form data with Fieldset</h2>
+    <p>
+      The fieldset element is used to group related data in a form, and the
+      legend element defines a caption for the fieldset element.
+    </p>
+    <form action="">
+      <fieldset style="width: 400px">
+        <legend>Contact Us!</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" name="fname" id="fname" placeholder="John" />
+        <br />
+        <br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" name="lname" id="lname" placeholder="Smith" />
+        <br /><br />
+        <label for="message">Message:</label><br />
+        <textarea
+          style="color: #777; font-size: 12px; resize: vertical"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        >
+Write your message...</textarea
+        >
+        <br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <hr />
+
+    <!-- The <datalist> Element 
+        The <datalist> element specifies a list of pre-defined options for an <input> element.
+        Users will see a drop-down list of the pre-defined options as they input data.
+        The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.     
+    -->
+    <h2>Datalist Element</h2>
+    <p>
+      The datalist element specifies a list of pre-defined options for an input
+      element.
+    </p>
+    <form action="">
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Safari"></option>
+        <option value="Opera"></option>
+        <option value="Tor Browser"></option>
+      </datalist>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr />
+
+    <h2>Output Element</h2>
+    <p>The output element represents the result of a calculation.</p>
+    <form oninput="result.value=parseInt(length.value)*parseInt(width.value)">
+      <input
+        type="number"
+        id="length"
+        name="length"
+        value=""
+        placeholder="Enter length"
+      />
+      <input
+        type="number"
+        id="width"
+        name="width"
+        value=""
+        placeholder="Enter width"
+      />
+      = Area Size:
+      <output name="result" for="length width"></output>
+    </form>
+  </body>
 </html>
