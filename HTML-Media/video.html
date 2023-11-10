@@ -1,0 +1,41 @@
+<!-- The HTML <video> element is used to show a video on a web page -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Video Examples</title>
+  </head>
+  <body>
+    <h1>HTML Video Element Examples</h1>
+
+    <hr />
+
+    <h2>Video Element</h2>
+    <!-- To show a video in HTML, use the <video> element
+        The controls attribute adds video controls, like play, pause, and volume.
+        The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+        The source tag enables the browser to display alternative videos. The browser will display the first working video  -->
+    <video src="./video/flower.mp4" width="600" height="400" controls>
+      <source src="./video/bird.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <hr />
+
+    <!-- Autoplay tag
+    To start a video automatically, use the autoplay attribute: -->
+    <h2>Autoplay Tag</h2>
+    <p>
+      To start the video automatically, use the autoplay attribute <br />
+      Chromium browsers do not allow autoplay in most cases. However, muted
+      autoplay is always allowed.
+    </p>
+    <video src="./video/bird.mp4" width="600" height="400" controls autoplay muted>
+      <source src="./video/nature.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
