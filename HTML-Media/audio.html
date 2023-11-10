@@ -2,18 +2,34 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Audio Examples</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>HTML Audio Examples</h1>
 
-    <hr>
+    <hr />
 
     <!-- The HTML <audio> element is used to play an audio file on a web page. -->
-    
-</body>
+    <h2>Audio Element</h2>
+    <audio src="audio/hiphop.mp3" controls>
+      <source src="audio/titanium.mp3" type="" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <hr />
+
+    <h2>Autoplay tag</h2>
+    <p>
+      Chromium browsers do not allow autoplay in most cases. However, muted
+      autoplay is always allowed. <br> Loop restarts the audio when it's finished
+    </p>
+    <audio controls autoplay muted loop>
+      <source src="audio/titanium.mp3" type="" />
+      Your browser does not support the audio tag.
+    </audio>
+  </body>
 </html>
